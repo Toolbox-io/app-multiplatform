@@ -1,4 +1,4 @@
-package com.example.ui
+package io.toolbox.ui
 
 import androidx.compose.foundation.DarkDefaultContextMenuRepresentation
 import androidx.compose.foundation.LightDefaultContextMenuRepresentation

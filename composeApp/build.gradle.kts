@@ -69,11 +69,11 @@ kotlin {
 }
 
 android {
-    namespace = "com.example"
+    namespace = "io.toolbox"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example"
+        applicationId = "io.toolbox"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -102,11 +102,11 @@ dependencies {
 
 compose.desktop {
     application {
-        mainClass = "com.example.MainKt"
+        mainClass = "io.toolbox.MainKt"
 
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "com.example"
+            packageName = "io.toolbox"
             packageVersion = "1.0.0"
 
             linux {
@@ -122,7 +122,7 @@ compose.desktop {
 
 compose.resources {
     publicResClass = false
-    packageOfResClass = "com.example"
+    packageOfResClass = "io.toolbox"
     generateResClass = auto
 }
 

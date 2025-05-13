@@ -1,4 +1,4 @@
-package com.example.ui.tabs
+package io.toolbox.ui.tabs
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource

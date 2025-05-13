@@ -1,24 +1,7 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Generate resource accessors" type="GradleRunConfiguration" factoryName="Gradle" activateToolWindowBeforeRun="false">
-    <ExternalSystemSettings>
-      <option name="executionName" />
-      <option name="externalProjectPath" value="$PROJECT_DIR$" />
-      <option name="externalSystemIdString" value="GRADLE" />
-      <option name="scriptParameters" value="" />
-      <option name="taskDescriptions">
-        <list />
-      </option>
-      <option name="taskNames">
-        <list>
-          <option value="composeApp:generateResourceAccessors" />
-        </list>
-      </option>
-      <option name="vmOptions" />
-    </ExternalSystemSettings>
-    <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-    <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-    <DebugAllEnabled>false</DebugAllEnabled>
-    <RunAsTest>false</RunAsTest>
+  <configuration default="false" name="Generate resource accessors" type="CompoundRunConfigurationType">
+    <toRun name="Generate resource accessors [App]" type="GradleRunConfiguration" />
+    <toRun name="Generate resource accessors [Utils]" type="GradleRunConfiguration" />
     <method v="2" />
   </configuration>
 </component>

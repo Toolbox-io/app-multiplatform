@@ -1,7 +1,7 @@
-package com.example
+package io.toolbox
 
 import com.pr0gramm3r101.utils.settings.Settings
-import com.example.ui.Theme
+import io.toolbox.ui.Theme
 
 object Settings {
     val settings = Settings()

@@ -1,6 +1,7 @@
-package com.example
+package io.toolbox
 
 import androidx.compose.ui.window.ComposeUIViewController
-import com.example.ui.App
+import io.toolbox.ui.App
 
+@Suppress("unused", "FunctionName")
 fun MainViewController() = ComposeUIViewController { App() }

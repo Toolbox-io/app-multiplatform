@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="iosApp" type="KmmRunConfiguration" factoryName="iOS Application" CONFIG_VERSION="1" EXEC_TARGET_ID="C024C8BA-3260-4EE5-9EE2-245E7A165C30" XCODE_PROJECT="$PROJECT_DIR$/iosApp/iosApp.xcodeproj" XCODE_CONFIGURATION="Debug" XCODE_SCHEME="iosApp">
+    <method v="2">
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="Generate resource accessors [App]" run_configuration_type="GradleRunConfiguration" />
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="Generate resource accessors [Utils]" run_configuration_type="GradleRunConfiguration" />
+      <option name="com.jetbrains.kmm.ios.BuildIOSAppTask" enabled="true" />
+    </method>
+  </configuration>
+</component>

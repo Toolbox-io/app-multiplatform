@@ -1,4 +1,4 @@
-@file:Suppress("unused", "MemberVisibilityCanBePrivate", "UnusedReceiverParameter", "NOTHING_TO_INLINE")
+@file:Suppress("unused", "MemberVisibilityCanBePrivate", "UnusedReceiverParameter")
 
 package com.pr0gramm3r101.components
 

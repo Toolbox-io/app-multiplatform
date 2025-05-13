@@ -1,4 +1,4 @@
-@file:Suppress("MemberVisibilityCanBePrivate")
+@file:Suppress("MemberVisibilityCanBePrivate", "DeprecatedCallableAddReplaceWith")
 
 package com.pr0gramm3r101.utils
 

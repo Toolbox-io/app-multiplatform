@@ -1,4 +1,4 @@
-package com.example.ui.tabs
+package io.toolbox.ui.tabs
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -42,21 +42,21 @@ import com.pr0gramm3r101.components.ListItem
 import com.pr0gramm3r101.components.SwitchListItem
 import com.pr0gramm3r101.utils.invoke
 import com.pr0gramm3r101.utils.materialYouAvailable
-import com.example.Res
-import com.example.Settings
-import com.example.Settings.materialYou
-import com.example.about
-import com.example.as_system
-import com.example.dark
-import com.example.light
-import com.example.materialYou
-import com.example.materialYou_d
-import com.example.settings
-import com.example.theme
-import com.example.ui.LocalNavController
-import com.example.ui.Theme
-import com.example.ui.dynamicThemeEnabled
-import com.example.ui.theme
+import io.toolbox.Res
+import io.toolbox.Settings
+import io.toolbox.Settings.materialYou
+import io.toolbox.about
+import io.toolbox.as_system
+import io.toolbox.dark
+import io.toolbox.light
+import io.toolbox.materialYou
+import io.toolbox.materialYou_d
+import io.toolbox.settings
+import io.toolbox.theme
+import io.toolbox.ui.LocalNavController
+import io.toolbox.ui.Theme
+import io.toolbox.ui.dynamicThemeEnabled
+import io.toolbox.ui.theme
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
 @Composable

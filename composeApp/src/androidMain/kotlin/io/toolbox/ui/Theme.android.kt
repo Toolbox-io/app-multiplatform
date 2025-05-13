@@ -1,5 +1,6 @@
-package com.example.ui
+package io.toolbox.ui
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.os.Build
 import androidx.compose.material3.ColorScheme
@@ -12,14 +13,13 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 import com.pr0gramm3r101.utils.invoke
-import com.example.TwoXConnectApp
 
 actual fun colorScheme(darkTheme: Boolean): ColorScheme {
     return if (Build.VERSION.SDK_INT >= 31 && dynamicThemeEnabled) {
         if (darkTheme) {
-            dynamicDarkColorScheme(TwoXConnectApp.context)
+            dynamicDarkColorScheme(io.toolbox.TwoXConnectApp.context)
         } else {
-            dynamicLightColorScheme(TwoXConnectApp.context)
+            dynamicLightColorScheme(io.toolbox.TwoXConnectApp.context)
         }
     } else {
         if (darkTheme) {
@@ -35,6 +35,7 @@ actual inline fun ProvideContextMenuRepresentation(darkTheme: Boolean, content: 
     content()
 }
 
+@SuppressLint("ComposableNaming")
 @Composable
 actual fun fixStatusBar(darkTheme: Boolean, asSystem: Boolean) {
     WindowCompat.getInsetsController((LocalContext() as Activity).window, LocalView()).isAppearanceLightStatusBars = !darkTheme

@@ -1,4 +1,4 @@
-package com.example.ui
+package io.toolbox.ui
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.pager.HorizontalPager
@@ -35,11 +35,11 @@ import com.pr0gramm3r101.utils.left
 import com.pr0gramm3r101.utils.link
 import com.pr0gramm3r101.utils.resetFocus
 import com.pr0gramm3r101.utils.right
-import com.example.Res
-import com.example.home
-import com.example.settings
-import com.example.ui.tabs.HomeTab
-import com.example.ui.tabs.SettingsTab
+import io.toolbox.Res
+import io.toolbox.home
+import io.toolbox.settings
+import io.toolbox.ui.tabs.HomeTab
+import io.toolbox.ui.tabs.SettingsTab
 
 @Composable
 internal inline fun MainScreen() {

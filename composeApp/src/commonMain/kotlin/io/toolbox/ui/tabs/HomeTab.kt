@@ -1,4 +1,4 @@
-package com.example.ui.tabs
+package io.toolbox.ui.tabs
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
@@ -15,8 +15,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.text.style.TextOverflow
 import org.jetbrains.compose.resources.stringResource
-import com.example.Res
-import com.example.home
+import io.toolbox.Res
+import io.toolbox.home
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -45,7 +45,7 @@ fun HomeTab() {
                     .verticalScroll(rememberScrollState())
             ) {
                 // TODO Home tab content
-                Text("Home tab content goes here")
+                Text("test")
             }
         }
     }

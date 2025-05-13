@@ -1,5 +1,3 @@
-@file:Suppress("NOTHING_TO_INLINE")
-
 package com.pr0gramm3r101.utils.settings
 
 interface Settings {

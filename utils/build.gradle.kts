@@ -68,6 +68,17 @@ kotlin {
 
 compose.resources {
     publicResClass = true
-    packageOfResClass = "ru.denis0001dev.utils"
+    packageOfResClass = "com.pr0gramm3r101.utils"
     generateResClass = auto
+}
+
+tasks.create("generateResourceAccessors") {
+    dependsOn(
+        *(
+            tasks.filter {
+                it.name.startsWith("generateResourceAccessors") &&
+                !it.name.matches("^(:${project.name})?generateResourceAccessors$".toRegex())
+            }.toTypedArray()
+        )
+    )
 }

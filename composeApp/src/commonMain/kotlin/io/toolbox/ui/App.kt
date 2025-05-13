@@ -1,4 +1,4 @@
-package com.example.ui
+package io.toolbox.ui
 
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut

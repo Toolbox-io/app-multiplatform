@@ -1,4 +1,4 @@
-package com.example.ui
+package io.toolbox.ui
 
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -31,9 +31,9 @@ import com.pr0gramm3r101.utils.Typography
 import com.pr0gramm3r101.utils.invoke
 import com.pr0gramm3r101.utils.plus
 import com.pr0gramm3r101.utils.supportClipboardManagerImpl
-import com.example.Res
-import com.example.Settings
-import com.example.roboto
+import io.toolbox.Res
+import io.toolbox.Settings
+import io.toolbox.roboto
 
 interface WindowInsetsScope {
     val safeDrawingInsets: WindowInsets

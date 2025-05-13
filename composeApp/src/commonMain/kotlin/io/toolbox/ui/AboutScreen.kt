@@ -1,6 +1,4 @@
-@file:Suppress("NOTHING_TO_INLINE")
-
-package com.example.ui
+package io.toolbox.ui
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
@@ -33,11 +31,11 @@ import androidx.compose.ui.unit.sp
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.resources.stringResource
 import com.pr0gramm3r101.utils.invoke
-import com.example.Res
-import com.example.about
-import com.example.app_desc
-import com.example.app_icon
-import com.example.back
+import io.toolbox.Res
+import io.toolbox.about
+import io.toolbox.app_desc
+import io.toolbox.app_icon
+import io.toolbox.back
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -85,8 +83,7 @@ internal inline fun AboutScreen() {
                     )
                 }
                 Text(
-                    // TODO Adjust the name
-                    text = "App Name",
+                    text = "Toolbox.io",
                     fontSize = 20.sp,
                     modifier = Modifier.padding(bottom = 16.dp)
                 )
