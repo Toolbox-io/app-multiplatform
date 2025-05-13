@@ -1,0 +1,57 @@
+[versions]
+agp = "8.9.2"
+androidx-activityCompose = "1.10.1"
+androidx-appcompat = "1.7.0"
+androidx-core-ktx = "1.16.0"
+androidx-lifecycle = "2.8.4"
+compose-multiplatform = "1.7.0"
+constraintlayoutComposeMultiplatform = "0.5.1"
+coreSplashscreen = "1.0.1"
+kotlin = "2.1.20"
+kotlinx-coroutines = "1.10.1"
+adaptiveAndroid = "1.1.0"
+kotlinStdlib = "2.1.20"
+biometric = "1.4.0-alpha03"
+gson = "2.12.1"
+kotlinxIoBytestring = "0.7.0"
+kotlinxCoroutinesCore = "1.10.1"
+kotlinxCoroutinesCoreNative = "1.7.3"
+kotlinxIoCore = "0.7.0"
+kotlinxSerializationJson = "1.8.1"
+material = "1.12.0"
+activityKtx = "1.10.1"
+navigationCompose = "2.8.0-alpha02"
+datastore = "1.1.4"
+
+[libraries]
+androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
+constraintlayout-compose-multiplatform = { module = "tech.annexflow.compose:constraintlayout-compose-multiplatform", version.ref = "constraintlayoutComposeMultiplatform" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidx-core-ktx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidx-appcompat" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
+androidx-lifecycle-viewmodel = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-viewmodel", version.ref = "androidx-lifecycle" }
+androidx-lifecycle-runtime-compose = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidx-lifecycle" }
+kotlinx-coroutines-core-native = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core-native", version.ref = "kotlinxCoroutinesCoreNative" }
+jetbrains-kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+jetbrains-kotlinx-io-bytestring = { module = "org.jetbrains.kotlinx:kotlinx-io-bytestring", version.ref = "kotlinxIoBytestring" }
+kotlinx-coroutines-swing = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-swing", version.ref = "kotlinx-coroutines" }
+androidx-adaptive-android = { group = "androidx.compose.material3.adaptive", name = "adaptive-android", version.ref = "adaptiveAndroid" }
+kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlinStdlib" }
+biometric = { module = "androidx.biometric:biometric", version.ref = "biometric" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+kotlinx-io-core = { module = "org.jetbrains.kotlinx:kotlinx-io-core", version.ref = "kotlinxIoCore" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activityKtx" }
+navigation-compose = { module = "org.jetbrains.androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
+datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore" }
+datastore-core = { group = "androidx.datastore", name = "datastore-core", version.ref = "datastore" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+composeMultiplatform = { id = "org.jetbrains.compose", version.ref = "compose-multiplatform" }
+composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+androidKotlinMultiplatformLibrary = { id = "com.android.kotlin.multiplatform.library", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
