@@ -12,16 +12,20 @@ kotlinx-coroutines = "1.10.1"
 adaptiveAndroid = "1.1.0"
 kotlinStdlib = "2.1.20"
 biometric = "1.4.0-alpha03"
-gson = "2.12.1"
+gson = "2.13.1"
+kotlinxCrypto = "1.0.2"
+kotlinxCryptoAes = "0.0.4"
 kotlinxIoBytestring = "0.7.0"
 kotlinxCoroutinesCore = "1.10.1"
-kotlinxCoroutinesCoreNative = "1.7.3"
 kotlinxIoCore = "0.7.0"
 kotlinxSerializationJson = "1.8.1"
 material = "1.12.0"
 activityKtx = "1.10.1"
 navigationCompose = "2.8.0-alpha02"
-datastore = "1.1.4"
+datastore = "1.1.6"
+jetbrainsKotlinJvm = "2.1.20"
+ossLicenses = "0.10.6"
+playServicesOssLicenses = "17.1.0"
 
 [libraries]
 androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
@@ -31,7 +35,6 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
 androidx-lifecycle-viewmodel = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-viewmodel", version.ref = "androidx-lifecycle" }
 androidx-lifecycle-runtime-compose = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidx-lifecycle" }
-kotlinx-coroutines-core-native = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core-native", version.ref = "kotlinxCoroutinesCoreNative" }
 jetbrains-kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
 jetbrains-kotlinx-io-bytestring = { module = "org.jetbrains.kotlinx:kotlinx-io-bytestring", version.ref = "kotlinxIoBytestring" }
 kotlinx-coroutines-swing = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-swing", version.ref = "kotlinx-coroutines" }
@@ -39,6 +42,9 @@ androidx-adaptive-android = { group = "androidx.compose.material3.adaptive", nam
 kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlinStdlib" }
 biometric = { module = "androidx.biometric:biometric", version.ref = "biometric" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+kotlinx-crypto = { module = "org.jetbrains.kotlinx:kotlinx-crypto", version.ref = "kotlinxCrypto" }
+kotlinx-crypto-aes = { module = "io.github.andreypfau:kotlinx-crypto-aes", version.ref = "kotlinxCryptoAes" }
+kotlinx-crypto-pbkdf2 = { module = "io.github.andreypfau:kotlinx-crypto-pbkdf2", version.ref = "kotlinxCryptoAes" }
 kotlinx-io-core = { module = "org.jetbrains.kotlinx:kotlinx-io-core", version.ref = "kotlinxIoCore" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
@@ -46,6 +52,8 @@ androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", ve
 navigation-compose = { module = "org.jetbrains.androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
 datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore" }
 datastore-core = { group = "androidx.datastore", name = "datastore-core", version.ref = "datastore" }
+oss-licenses-classpath = { module = "com.google.android.gms:oss-licenses-plugin", version.ref = "ossLicenses" }
+play-services-oss-licenses = { module = "com.google.android.gms:play-services-oss-licenses", version.ref = "playServicesOssLicenses" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
@@ -55,3 +63,4 @@ composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "k
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 androidKotlinMultiplatformLibrary = { id = "com.android.kotlin.multiplatform.library", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }

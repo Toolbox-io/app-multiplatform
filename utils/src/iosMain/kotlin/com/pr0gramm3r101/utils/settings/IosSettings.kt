@@ -2,7 +2,6 @@ package com.pr0gramm3r101.utils.settings
 
 import platform.Foundation.NSUserDefaults
 
-// TODO fix
 class IosSettings : Settings {
     private val defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults
 

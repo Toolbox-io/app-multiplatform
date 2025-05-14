@@ -1,4 +1,6 @@
 import org.jetbrains.compose.desktop.application.dsl.TargetFormat
+import java.io.FileInputStream
+import java.util.Properties
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
@@ -36,6 +38,8 @@ kotlin {
             implementation(libs.androidx.activity.compose)
             implementation(libs.androidx.core.splashscreen)
             implementation(libs.androidx.adaptive.android)
+            implementation(libs.play.services.oss.licenses)
+            implementation(project(":javaUtils"))
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -60,6 +64,7 @@ kotlin {
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
             implementation(libs.kotlinx.coroutines.swing)
+            implementation(project(":javaUtils"))
         }
         iosMain.dependencies {
             implementation(libs.jetbrains.kotlinx.io.bytestring)
@@ -70,29 +75,59 @@ kotlin {
 
 android {
     namespace = "io.toolbox"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "io.toolbox"
         minSdk = 24
         targetSdk = 36
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 27
+        versionName = "2.0"
+    }
+
+    signingConfigs {
+        create("release") {
+            val keystoreProperties = Properties().apply {
+                load(FileInputStream(rootProject.file("keystore.properties")))
+            }
+            storeFile = rootProject.file("keys/release.jks")
+            keyAlias = "release"
+            storePassword = keystoreProperties["storePassword"].toString()
+            keyPassword = keystoreProperties["keyPassword"].toString()
+            enableV3Signing = true
+        }
+    }
+
+    buildTypes {
+        release {
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+            signingConfig = signingConfigs.getByName("release")
+        }
+
+        create("releaseTest") {
+            initWith(getByName("release"))
+            isMinifyEnabled = false
+            isShrinkResources = false
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
-    buildTypes {
-        release {
-            isMinifyEnabled = true
-            isShrinkResources = true
-        }
-    }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+    buildFeatures {
+        viewBinding = true
+        compose = true
+        buildConfig = true
     }
 }
 

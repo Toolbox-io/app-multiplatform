@@ -504,7 +504,7 @@ inline fun backCallback(enabled: Boolean = true, crossinline callback: OnBackPre
     }
 }
 
-fun String.encrypt(password: String): String {
+actual fun String.encrypt(password: String): String {
     val salt = ByteArray(16).also { SecureRandom().nextBytes(it) }
     val spec = PBEKeySpec(password.toCharArray(), salt, 65536, 256)
     val factory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA1")
@@ -519,7 +519,7 @@ fun String.encrypt(password: String): String {
     return "${Base64.encodeToString(salt, Base64.DEFAULT)}:${Base64.encodeToString(iv, Base64.DEFAULT)}:${Base64.encodeToString(encryptedBytes, Base64.DEFAULT)}"
 }
 
-fun String.decrypt(password: String): String {
+actual fun String.decrypt(password: String): String {
     val parts = this.split(":")
     val salt = Base64.decode(parts[0], Base64.DEFAULT)
     val iv = Base64.decode(parts[1], Base64.DEFAULT)

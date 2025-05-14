@@ -30,4 +30,4 @@ dependencyResolutionManagement {
     }
 }
 
-include(":composeApp", ":utils")
+include(":composeApp", ":utils", ":javaUtils")

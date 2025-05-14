@@ -40,6 +40,8 @@ kotlin {
             implementation(compose.components.resources)
             implementation(libs.constraintlayout.compose.multiplatform)
             implementation(compose.materialIconsExtended)
+            implementation(libs.kotlinx.crypto.aes)
+            implementation(libs.kotlinx.crypto.pbkdf2)
         }
 
         androidMain.dependencies {

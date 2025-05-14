@@ -5,7 +5,7 @@ import android.content.Context
 import com.pr0gramm3r101.utils.UtilsLibrary
 import java.lang.ref.WeakReference
 
-class TwoXConnectApp: Application() {
+class App: Application() {
     companion object {
         private lateinit var _context: WeakReference<Context>
         val context get() = _context.get()!!

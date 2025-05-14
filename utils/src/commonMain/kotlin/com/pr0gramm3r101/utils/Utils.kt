@@ -180,3 +180,6 @@ operator fun PaddingValues.plus(other: PaddingValues) = PaddingValues(
 )
 
 expect val materialYouAvailable: Boolean
+
+expect fun String.encrypt(password: String): String
+expect fun String.decrypt(password: String): String

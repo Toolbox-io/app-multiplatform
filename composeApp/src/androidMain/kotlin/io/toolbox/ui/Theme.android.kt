@@ -17,9 +17,9 @@ import com.pr0gramm3r101.utils.invoke
 actual fun colorScheme(darkTheme: Boolean): ColorScheme {
     return if (Build.VERSION.SDK_INT >= 31 && dynamicThemeEnabled) {
         if (darkTheme) {
-            dynamicDarkColorScheme(io.toolbox.TwoXConnectApp.context)
+            dynamicDarkColorScheme(io.toolbox.App.context)
         } else {
-            dynamicLightColorScheme(io.toolbox.TwoXConnectApp.context)
+            dynamicLightColorScheme(io.toolbox.App.context)
         }
     } else {
         if (darkTheme) {
